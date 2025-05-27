@@ -244,6 +244,10 @@ h2 {
 	transition: all 0.30s cubic-bezier(.47,.17,.3,1);
 }
 
+button img {
+  width: 2rem;
+}
+
 .link:hover:after {
 	left: 0;
 	width: 100%;
@@ -781,7 +785,7 @@ details[open] summary::before {
 .quiz-container {
   margin: 0 auto;
   padding-top: 1.4rem;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.15rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   display: flex;
