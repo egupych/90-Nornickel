@@ -257,7 +257,8 @@ button img {
 
 .container {
   background-color: var(--light-color);
-  margin: 5.00rem auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .container_start {
@@ -537,6 +538,7 @@ details[open] summary::before {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 .galeriaHist-item-slide img {
@@ -822,6 +824,7 @@ details[open] summary::before {
   gap: 1.25rem;
   max-width: 100%;
   object-fit: cover;
+  justify-items: center;
 }
 
 .options-container img {
@@ -843,10 +846,11 @@ object-fit: cover;
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  width: 100%;
+  width: 80%;
   box-sizing: border-box;
   word-wrap: break-word;
   overflow-wrap: break-word;
+
 }
 
 .option:hover {
