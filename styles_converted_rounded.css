@@ -170,7 +170,7 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 60%;
-  max-width: 84%;
+  max-width: 86%;
 }
 
 
@@ -178,7 +178,7 @@ h2 {
 .offer{
   display: flex;
   flex-direction: column;
-  max-width: 84%;
+  max-width: 86%;
 }
 
 .content img {
@@ -267,7 +267,7 @@ button img {
   justify-content: space-between;
   overflow: hidden;
   width: 60%;
-  max-width: 84%;
+  max-width: 86%;
   margin: 0 auto; /* Центрирование */
   box-sizing: border-box; /* Включение padding в ширину */
 }
@@ -279,7 +279,7 @@ button img {
   justify-content: center;
   overflow: hidden;
   width: 67%;
-  max-width: 84%;
+  max-width: 86%;
   margin: 0 auto; /* Центрирование */
   box-sizing: border-box; /* Включение padding в ширину */
 }
@@ -455,14 +455,14 @@ button img {
 }
 
 .rhzvjqnm img {
-  max-width: 84%;
+  max-width: 86%;
   max-height: 100%;
   object-fit: contain;
 }
 
 .kjdhxowq {
   width: 56%;
-  max-width: 84%;
+  max-width: 86%;
   margin: 0 auto 3.13rem;
   background: #fff;
   border-radius: 1rem;
@@ -589,7 +589,7 @@ details[open] summary::before {
   display: flex;
   justify-content: space-between;
   width: 55rem;
-  max-width: 84%;
+  max-width: 86%;
   margin: 1.25rem auto;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -623,7 +623,7 @@ details[open] summary::before {
 
 .gklfpotn {
   width: 60%;
-  max-width: 84%;
+  max-width: 86%;
   overflow: hidden;
   border-radius: 0.75rem;
   border: 0.12rem solid var(--accent2-color);
@@ -871,7 +871,7 @@ object-fit: cover;
   font-family: "li", sans-serif;
   line-height: 120%;
   text-align: center;
-  width: 84%;
+  width: 86%;
   max-width: 100%;
 }
 
@@ -959,7 +959,7 @@ padding-bottom: 5rem;
 
 @media (max-width: 1250px) {
   .galeriaHist-container {
-    width: 84%;
+    width: 86%;
     margin: 2rem auto 0;
   }
   
@@ -998,28 +998,28 @@ padding-bottom: 5rem;
   }
   
   .offer p {
-    width: 84%;
+    width: 86%;
   }
   
   .container_mini {
-    width: 84%;
+    width: 86%;
   }
   
   .gklfpotn {
-    width: 84%;
+    width: 86%;
   }
   
   .dksjeowi {
-    width: 84%;
+    width: 86%;
   }
   
   .kjdhxowq {
-    width: 84%;
+    width: 86%;
   }
   
   .ucmnrtba-slider
    {
-      width: 84%;
+      width: 86%;
   }
   
   .grid-text img {
@@ -1036,7 +1036,7 @@ padding-bottom: 5rem;
 
 @media (max-width: 768px) {
   .quiz-container {
-    width: 84%;
+    width: 86%;
     padding-left: 0rem;
     padding-right: 0rem;
     margin-top: 2rem;
@@ -1064,7 +1064,7 @@ padding-bottom: 5rem;
   }
   
   .feedback-container {
-    width: 84%;
+    width: 86%;
     font-size: 0.9rem;
     margin-top: 1.5rem;
   }
@@ -1101,18 +1101,18 @@ padding-bottom: 5rem;
 @media (max-width: 480px) {
 
   .footer__container {
-    max-width: 84%;
+    max-width: 86%;
 }
 
 
 /* Разделительная линия */
 .footer__line {
-  max-width: 84%;
+  max-width: 86%;
 }
 
 /* Нижняя часть */
 .footer__bottom {
-  max-width: 84%;
+  max-width: 86%;
 }
 
   
@@ -1171,7 +1171,7 @@ padding-bottom: 5rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 60%;
-  max-width: 84%;
+  max-width: 86%;
 }
 
 }
