@@ -894,10 +894,9 @@ object-fit: cover;
 .footer {
   color: var(--light-color);
   font-family: 'r', sans-serif;
-  font-size: 0.8rem;
   line-height: 120%;
-padding-top: 5rem;
-padding-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   max-width: 100%;
   background-color: var(--accent4-color);
 }
@@ -928,8 +927,6 @@ padding-bottom: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  font-size: 0.8rem;
   color: var(--light-color);
   max-width: 60%;
   margin: 0 auto;
