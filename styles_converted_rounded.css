@@ -466,7 +466,7 @@ button img {
 
 .kjdhxowq {
   width: 56%;
-  max-width: 100%;
+  max-width: 90%;
   margin: 0 auto 3.13rem;
   background: #fff;
   border-radius: 1rem;
@@ -1105,6 +1105,21 @@ padding-bottom: 5rem;
 
 
 @media (max-width: 480px) {
+
+  .footer__container {
+    max-width: 90%;
+}
+
+
+/* Разделительная линия */
+.footer__line {
+  max-width: 90%;
+}
+
+/* Нижняя часть */
+.footer__bottom {
+  max-width: 90%;
+}
 
   
   .number img {
