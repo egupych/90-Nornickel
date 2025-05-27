@@ -764,7 +764,8 @@ details[open] summary::before {
 }
 
 .ucmnrtba-slide {
-  flex: 0 0 33.3333%;
+  flex: 0 0 calc(100% / 3); /* или 2 на мобильных */
+  box-sizing: border-box;
   padding: 0 0.38rem;
 }
 
@@ -1042,6 +1043,9 @@ object-fit: cover;
 
 @media (max-width: 900px) {
   
+  .ucmnrtba-slide {
+    flex: 0 0 calc(100% / 2);
+  }
 
   header{
     height: 70vh; 

@@ -242,15 +242,34 @@ document.addEventListener("DOMContentLoaded", function () {
   const next = document.querySelector(".ucmnrtba-next");
   const dotsContainer = document.querySelector(".ucmnrtba-dots");
 
-  const slidesToShow = 3;
-  const totalSlides = slides.length;
-  const totalPages = Math.ceil(totalSlides / slidesToShow);
+  let slidesToShow = getSlidesToShow();
   let currentPage = 0;
 
+  function getSlidesToShow() {
+    return window.innerWidth <= 799 ? 2 : 3;
+  }
+
+  function getTotalPages() {
+    return Math.ceil(slides.length / slidesToShow);
+  }
+
   function updateSlider() {
+    slidesToShow = getSlidesToShow();
     const slideWidth = slides[0].offsetWidth;
     const offset = slideWidth * slidesToShow * currentPage;
     track.style.transform = `translateX(-${offset}px)`;
+    updateDots();
+  }
+
+  function updateDots() {
+    const dots = document.querySelectorAll(".ucmnrtba-dots span");
+    const totalPages = getTotalPages();
+
+    // recreate dots if slidesToShow changed
+    if (dots.length !== totalPages) {
+      dotsContainer.innerHTML = "";
+      createDots();
+    }
 
     document.querySelectorAll(".ucmnrtba-dots span").forEach((dot, i) => {
       dot.classList.toggle("active", i === currentPage);
@@ -258,9 +277,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function createDots() {
+    const totalPages = getTotalPages();
     for (let i = 0; i < totalPages; i++) {
       const dot = document.createElement("span");
-      dot.classList.toggle("active", i === 0);
+      dot.classList.toggle("active", i === currentPage);
       dot.addEventListener("click", () => {
         currentPage = i;
         updateSlider();
@@ -277,18 +297,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   next.addEventListener("click", () => {
-    if (currentPage < totalPages - 1) {
+    if (currentPage < getTotalPages() - 1) {
       currentPage++;
       updateSlider();
     }
   });
 
-  window.addEventListener("resize", updateSlider);
+  window.addEventListener("resize", () => {
+    updateSlider();
+  });
 
   createDots();
   updateSlider();
 });
-
 
 
 
