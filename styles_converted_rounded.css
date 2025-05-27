@@ -1044,7 +1044,7 @@ object-fit: cover;
 @media (max-width: 900px) {
   
   .ucmnrtba-slide {
-    flex: 0 0 calc(100% / 2);
+    flex: 0 0 calc(100% / 1);
   }
 
   header{
