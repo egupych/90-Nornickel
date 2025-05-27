@@ -1039,12 +1039,61 @@ padding-bottom: 5rem;
   }
 
 @media (max-width: 768px) {
+
+
+
+  .azkqwrny.active {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
   .quiz-container {
     width: 86%;
     padding-left: 0rem;
     padding-right: 0rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  h1 {
+    margin: 0;
+    padding-top: 10rem;
+    font-family: 'l', sans-serif;
+    font-size: 7.50rem;
+    line-height: 120%;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  .offer p {
+    font-family: 'l', sans-serif;
+    font-size: 1.50rem;
+    line-height: 120%;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 60%;
+    max-width: 86%;
+  }
+
+
+  .footer__container {
+    max-width: 86%;
+  }
+
+
+/* Разделительная линия */
+  .footer__line {
+    max-width: 86%;
+  }
+
+/* Нижняя часть */
+  .footer__bottom {
+    max-width: 86%;
   }
 
   /* .number img {
@@ -1104,20 +1153,6 @@ padding-bottom: 5rem;
 
 @media (max-width: 480px) {
 
-  .footer__container {
-    max-width: 86%;
-}
-
-
-/* Разделительная линия */
-.footer__line {
-  max-width: 86%;
-}
-
-/* Нижняя часть */
-.footer__bottom {
-  max-width: 86%;
-}
 
   
   .number img {
@@ -1153,29 +1188,6 @@ padding-bottom: 5rem;
     font-size: 0.7rem;
   }
 
-  h1 {
-  margin: 0;
-  padding-top: 10rem;
-  font-family: 'l', sans-serif;
-  font-size: 7.50rem;
-  line-height: 120%;
-  background: linear-gradient(135deg, #ffffff, #ffffff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
-
-.offer p {
-  font-family: 'l', sans-serif;
-  font-size: 1.50rem;
-  line-height: 120%;
-  background: linear-gradient(135deg, #ffffff, #ffffff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: 60%;
-  max-width: 86%;
-}
 
 }
