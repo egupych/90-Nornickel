@@ -814,6 +814,8 @@ details[open] summary::before {
   color: var(--light-color);
   text-align: center;
   max-width: 984px;
+  padding-left: 2rem;
+  padding-right: 2rem;;
 
 }
 
@@ -1123,7 +1125,6 @@ padding-bottom: 5rem;
   }
   
   .option, .option2, .option3 {
-    font-size: 0.9rem;
     border-radius: 1rem;
     /* Убираем min-width и max-width для гибкости */
   }
@@ -1177,8 +1178,6 @@ padding-bottom: 5rem;
   
   .option, .option2, .option3 {
     padding: 0.8rem 1rem;
-    font-size: 0.8rem;
-    gap: 0.8rem;
   }
   
   .options-container img {
