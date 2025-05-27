@@ -1105,10 +1105,7 @@ padding-bottom: 5rem;
 
 
 @media (max-width: 480px) {
-  .quiz-container {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
+
   
   .number img {
     width: 6rem;
@@ -1142,4 +1139,30 @@ padding-bottom: 5rem;
   .galeriaHist-cronograma-item {
     font-size: 0.7rem;
   }
+
+  h1 {
+  margin: 0;
+  padding-top: 10rem;
+  font-family: 'l', sans-serif;
+  font-size: 7.50rem;
+  line-height: 120%;
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.offer p {
+  font-family: 'l', sans-serif;
+  font-size: 1.50rem;
+  line-height: 120%;
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 60%;
+  max-width: 90%;
+}
+
 }
