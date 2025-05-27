@@ -1040,6 +1040,13 @@ object-fit: cover;
 @media (max-width: 768px) {
 
 
+  .grid-text {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  }
+
 
   .azkqwrny.active {
     display: flex;
