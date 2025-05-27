@@ -221,8 +221,8 @@ h2 {
   cursor: pointer;
   gap: 5px;
   position: absolute;
-  right: 3rem;
-  top: 1rem;
+  right: 2rem;
+  top: 2.2rem;
 }
 
 .burger .bar {
@@ -989,7 +989,7 @@ padding-bottom: 5rem;
   
 
   header{
-    height: 60vh; 
+    height: 70vh; 
   }
   
   .links {
