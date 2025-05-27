@@ -232,6 +232,61 @@ h2 {
   border-radius: 5px;
 }
 
+
+
+
+
+
+.xjmrtdka {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 60%;
+  margin: 60px auto;
+}
+
+.cfumzqae {
+  background: #0083d3;
+  color: white;
+  border-radius: 24px;
+  padding: 30px;
+
+}
+
+.gqvnfhuw {
+  color: white;
+  border: 1px solid white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.xocmtrbd {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1;
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.yblvgzen {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
 .link:after {
 	content: "";
 	position: absolute;
@@ -959,7 +1014,7 @@ object-fit: cover;
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--accent1-color); /* Цвет при наведении */
 }
-
+/* 
 @media (max-width: 1250px) {
   .galeriaHist-container {
     width: 86%;
@@ -983,7 +1038,7 @@ object-fit: cover;
     flex: none;
     min-width: auto;
   }
-}
+} */
 
 @media (max-width: 900px) {
   
@@ -1038,6 +1093,10 @@ object-fit: cover;
   }
 
 @media (max-width: 768px) {
+
+  .xjmrtdka{
+    grid-template-columns: repeat(1, 1fr);
+  }
 
 
   .grid-text {
