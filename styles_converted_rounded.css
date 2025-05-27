@@ -817,6 +817,7 @@ details[open] summary::before {
   color: var(--light-color);
   text-align: center;
   max-width: 984px;
+  
 }
 
 .options-container {
