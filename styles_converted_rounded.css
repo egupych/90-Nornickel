@@ -316,6 +316,7 @@ button img {
   background-color: var(--light-color);
   margin-top: 2rem;
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .container_start {
@@ -336,13 +337,14 @@ button img {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 67%;
-  max-width: 86%;
+  width: 100%;
   margin: 0 auto; /* Центрирование */
   box-sizing: border-box; /* Включение padding в ширину */
 }
 
-
+  .content {
+    width: 60%;
+  }
 
 
 .grid-text {
@@ -750,7 +752,7 @@ details[open] summary::before {
 /* слйдер 3 фото  */
 .ucmnrtba-slider {
   position: relative;
-  width: 68%;
+  width: 60%;
   max-width:100%;
   margin: 0 auto;
   padding: 1.25rem 0;
@@ -1046,6 +1048,20 @@ object-fit: cover;
 } */
 
 @media (max-width: 900px) {
+
+  .content {
+    width: 86%;
+  }
+
+  .container_mini {
+    width: 100%;
+    max-width: 100%;
+
+  }
+
+  .container {
+    width: 100%;
+  }
   
   .ucmnrtba-slide {
     flex: 0 0 calc(100% / 1);
@@ -1067,9 +1083,6 @@ object-fit: cover;
     width: 86%;
   }
   
-  .container_mini {
-    width: 86%;
-  }
   
   .gklfpotn {
     width: 86%;
