@@ -219,6 +219,7 @@ h2 {
   position: absolute;
   opacity: 0.95;
   left: 0;
+  top: 9rem;
 }
 
 .link {
@@ -1076,6 +1077,15 @@ object-fit: cover;
 }
 
 @media (max-width: 1000px) {
+
+  .quiz-container{
+    width: 80%;
+  }
+
+
+  .xjmrtdka {
+  max-width: 86%;
+}
 
   .galeriaHist-container {
     width: 86%;
