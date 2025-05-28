@@ -261,7 +261,7 @@ h2 {
 
 .gqvnfhuw {
   color: var(--light-color);
-  border: 1px solid var(--light-color);
+  border: 0.12rem solid var(--light-color);
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   font-size: 1rem;
@@ -448,7 +448,7 @@ button img {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  border-bottom: 0.1rem solid var(--accent2-color);
+  border-bottom: 0.12rem solid var(--accent2-color);
 }
 
 .iwpqxzas:hover {
@@ -528,7 +528,7 @@ button img {
   background: #fff;
   border-radius: 1rem;
   padding: 1.8rem;
-  box-shadow: 0 0.13rem 0.5rem rgba(0,0,0,0.1);
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
 }
 
 /* Общий стиль summary */
@@ -793,7 +793,7 @@ details[open] summary::before {
   font-size: 1.25rem;
   cursor: pointer;
   z-index: 10;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
 
 }
 
