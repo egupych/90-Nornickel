@@ -604,6 +604,7 @@ details[open] summary::before {
   color: var(--light-color);
   border-radius: 0.25rem;
   box-sizing: border-box;
+  font-size: 0.9rem;
 }
 
 .galeriaHist-botao {
@@ -617,7 +618,7 @@ details[open] summary::before {
   font-size: 1rem;
   cursor: pointer;
   border-radius: 0.25rem;
-  opacity: 0.8;
+  opacity: 0;
   transition: opacity 0.2s;
   z-index: 10;
 }
@@ -633,12 +634,12 @@ details[open] summary::before {
 
 .galeriaHist-cronograma {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 55rem;
   max-width: 86%;
   margin: 1.25rem auto;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2.7rem;
 }
 .galeriaHist-cronograma-item {
   background: none;
