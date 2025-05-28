@@ -646,7 +646,7 @@ details[open] summary::before {
   max-width: 86%;
   margin: 1.25rem auto;
   flex-wrap: wrap;
-  gap: 2.7rem;
+  gap: 2rem 3rem;
 }
 .galeriaHist-cronograma-item {
   background: none;
