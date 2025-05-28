@@ -257,7 +257,10 @@ h2 {
   background: var(--accent1-color);
   color: white;
   border-radius: 2rem;
-  padding: 1.7rem;
+  padding-top: 1.7rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  padding-bottom: 1.1rem;
 }
 
 .gqvnfhuw {
@@ -504,7 +507,6 @@ button img {
 
 .xmqoefha.active {
   border-color: var(--accent4-color);
-  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
 }
 
 .rhzvjqnm {
@@ -1124,13 +1126,6 @@ object-fit: cover;
 
   .hdyqeuwp {
     flex-direction: column;
-  }
-
-  .cfumzqae {
-    background: #0083d3;
-    color: white;
-    border-radius: 2rem;
-    padding: 2rem;
   }
 
   .footer{
