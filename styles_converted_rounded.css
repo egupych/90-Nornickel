@@ -60,6 +60,10 @@ body {
   animation: fadeIn 0.7s ease-out forwards;
 }
 
+.footer_mobile {
+  display: none;
+}
+
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -976,7 +980,7 @@ object-fit: cover;
   max-width: 60%;
   margin: 0 auto;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Нижняя часть */
@@ -1097,6 +1101,14 @@ object-fit: cover;
   }
 
 @media (max-width: 768px) {
+
+  .footer{
+    display: none;
+  }
+
+  .footer_mobile {
+    display: block;
+  }
 
   .xjmrtdka{
     grid-template-columns: repeat(1, 1fr);
