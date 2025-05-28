@@ -160,7 +160,7 @@ h3 {
 
 h2 {
   font-family: 'r', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 100%;
   color: var(--accent4-color);
 
@@ -489,8 +489,8 @@ button img {
   border-radius: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 12.7rem;
-  height: 12.7rem;
+  width: 11rem;
+  height: 11rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -508,6 +508,7 @@ button img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .rhzvjqnm img {
