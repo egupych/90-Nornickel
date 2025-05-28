@@ -374,14 +374,14 @@ button img {
 .header-description {
   font-family: 'r', sans-serif;
   font-size: 1rem;
-  color: var(--accent-color);
+  color: var(--dark-color);
   line-height: 136%;
 }
 
 .description {
   font-family: 'r', sans-serif;
   font-size: 1rem;
-  color: var(--accent-color);
+  color: var(--dark-color);
   line-height: 130%;
   margin: 0 0 0.94rem;
 }
