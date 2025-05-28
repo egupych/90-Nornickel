@@ -265,11 +265,16 @@ h2 {
 .gqvnfhuw {
   color: var(--light-color);
   border: 0.12rem solid var(--light-color);
-  padding: 0.3rem 0.9rem;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.42rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
   border-radius: 1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   display: inline-block;
   margin-bottom: 1rem;
+  line-height: 100%;
 }
 
 .xocmtrbd {
@@ -400,6 +405,7 @@ button img {
   width: 100%;
   display: block;
   margin: 0 auto;
+  margin-top: 1rem;
 }
 
 
