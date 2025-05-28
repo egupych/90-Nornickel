@@ -127,12 +127,13 @@ header{
 }
 
 nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 	font-size: 0.9rem;
   font-family: 'sb', sans-serif;
   color: var(--light-color);
-	display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%;
 }
 
 
@@ -200,7 +201,6 @@ h2 {
 .links {
 	display: flex;
 	cursor: pointer;
-  justify-content: space-between;
   gap: 1.8rem;
   padding-bottom: 0.2rem;
   color: var(--accent2-color);
