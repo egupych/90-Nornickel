@@ -155,8 +155,9 @@ h1 {
 h3 {
   font-family: 'r', sans-serif;
   font-size: 1.7rem;
-  line-height: 20%;
-  color: var(--dark-color);
+  line-height: 100%;
+  margin-bottom: 1rem;
+  color: var(--accent4-color);
 }
 
 h2 {
@@ -696,18 +697,22 @@ details[open] summary::before {
 .hdyqeuwp {
   display: flex;
   border-bottom: 0.12rem solid var(--accent2-color);
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .ziwunbke {
-  flex: 1;
+  display: flex;
   text-align: center;
-  padding: 0.88rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
   cursor: pointer;
   font-weight: bold;
   color: var(--accent4-color);
   border-bottom: 0.12rem solid transparent;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 
 }
 
@@ -1117,6 +1122,9 @@ object-fit: cover;
 
 @media (max-width: 768px) {
 
+  .hdyqeuwp {
+    flex-direction: column;
+  }
 
   .cfumzqae {
     background: #0083d3;
