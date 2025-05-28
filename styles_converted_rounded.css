@@ -180,7 +180,7 @@ h2 {
 
 .offer {
   display: flex;
-  height: 90%;
+  height: 86%;
   justify-content: space-between;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -201,9 +201,10 @@ h2 {
 .links {
 	display: flex;
 	cursor: pointer;
-  gap: 1.8rem;
+  gap: 1.7rem;
   padding-bottom: 0.2rem;
-  color: var(--accent2-color);
+  color: var(--light-color);
+  font-size: 0.8rem;
 }
 
 
@@ -1014,31 +1015,60 @@ object-fit: cover;
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--accent1-color); /* Цвет при наведении */
 }
-/* 
-@media (max-width: 1250px) {
-  .galeriaHist-container {
-    width: 86%;
-    margin: 2rem auto 0;
+
+
+@media (max-width: 1400px) {
+
+  html {
+    font-size: 1rem;
+  }
+
+  .container_start {
+    width: 70%;
+  }
+
+  .quiz-container{
+    width: 70%;
+  }
+
+  .content {
+    width: 70%;
   }
   
-  .galeriaHist-legenda {
-    position: static;
-    background: var(--dark-color);
-    backdrop-filter: none;
-  }
-  
-  .galeriaHist-cronograma {
+
+  .container_mini {
     width: 100%;
-    justify-content: center;
-    gap: 1rem;
+    max-width: 100%;
+
+  }
+
+  .container {
+    width: 100%;
   }
   
-  .galeriaHist-cronograma-item {
-    font-size: 0.9rem;
-    flex: none;
-    min-width: auto;
+  .ucmnrtba-slide {
+    flex: 0 0 calc(100% / 2);
   }
-} */
+  
+  
+  .gklfpotn {
+    width: 70%;
+  }
+  
+  .dksjeowi {
+    width: 70%;
+  }
+  
+  .kjdhxowq {
+    width: 70%;
+  }
+  
+  .ucmnrtba-slider
+   {
+      width: 70%;
+  }
+  
+}
 
 @media (max-width: 900px) {
 
@@ -1102,14 +1132,7 @@ object-fit: cover;
   .grid-text img {
     display: none;
   }
-  
-  /* .quiz-container {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 0;
-  } */
-  
-  }
+}
 
 @media (max-width: 768px) {
 
