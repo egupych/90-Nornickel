@@ -204,13 +204,14 @@ h2 {
 
 
 #links.active {
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: rgba(33, 57, 109, 1);
-  padding: 1rem;
+  background-color: var(--dark-color);
+  padding: 2rem;
   position: absolute;
-  top: 57px;
+  opacity: 0.95;
   left: 0;
 }
 
