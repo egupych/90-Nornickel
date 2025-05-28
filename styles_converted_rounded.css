@@ -435,7 +435,7 @@ button img {
 }
 
 .iwpqxzas {
-  background: var(--accent1-color);
+  background: var(--accent4-color);
   color: var(--accent2-color);
   padding: 1.25rem;
   font-size: 1.5rem;
@@ -1198,7 +1198,7 @@ object-fit: cover;
 }
 
   .quiz-container {
-    width: 80%;
+    width: 76%;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 2rem;
@@ -1280,25 +1280,3 @@ object-fit: cover;
   
 }
 
-
-
-@media (max-width: 480px) {
-
-
-  
-  .number img {
-    width: 6rem;
-  }
-  
-  .question-container p {
-    font-size: 1.25rem;
-  }
-  
-  .option, .option2, .option3 {
-    padding: 0.8rem 1rem;
-  }
-  
-  .options-container img {
-    width: 1.8rem;
-  }
-}
