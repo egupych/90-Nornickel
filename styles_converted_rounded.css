@@ -502,7 +502,6 @@ button img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 1rem;
 }
 
 .xmqoefha.active {
@@ -527,8 +526,9 @@ button img {
 .kjdhxowq {
   width: 56%;
   max-width: 86%;
-  margin: 0 auto 3.13rem;
-  background: #fff;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background: var(--light-color);
   border-radius: 1rem;
   padding: 1.8rem;
   box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
