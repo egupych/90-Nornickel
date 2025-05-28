@@ -520,9 +520,9 @@ button img {
   max-width: 86%;
   margin: 0 auto;
   margin-top: 2rem;
-  background: var(--accent2-color);
+  /* background: var(--accent2-color); */
   border-radius: 1rem;
-  padding: 1.8rem;
+  /* padding: 1.8rem; */
 }
 
 /* Общий стиль summary */
