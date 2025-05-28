@@ -439,7 +439,8 @@ button img {
   background: var(--accent4-color);
   color: var(--accent2-color);
   padding: 1.25rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  line-height: 120%;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -702,7 +703,7 @@ details[open] summary::before {
   cursor: pointer;
   font-weight: bold;
   color: var(--accent4-color);
-  font-size: 0.9rem;
+  font-size: 1rem;
 
 }
 
@@ -1156,7 +1157,7 @@ object-fit: cover;
 @media (max-width: 768px) {
 
   .galeriaHist-item-slide img {
-  margin-bottom: 30rem;
+  margin-bottom: 40rem;
   border-radius: 1rem;
 }
 
