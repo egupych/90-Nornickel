@@ -1208,7 +1208,7 @@ object-fit: cover;
   h1 {
     margin: 0;
     font-family: 'l', sans-serif;
-    font-size: 4rem;
+    font-size: 6rem;
     line-height: 120%;
     background: linear-gradient(135deg, #ffffff, #ffffff);
     background-clip: text;
@@ -1220,7 +1220,7 @@ object-fit: cover;
 
   .offer p {
     font-family: 'l', sans-serif;
-    font-size: 1.20rem;
+    font-size: 2rem;
     line-height: 120%;
     background: linear-gradient(135deg, #ffffff, #ffffff);
     background-clip: text;
