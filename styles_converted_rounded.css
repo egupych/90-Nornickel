@@ -438,7 +438,7 @@ button img {
   background: var(--accent4-color);
   color: var(--accent2-color);
   padding: 1.25rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -454,7 +454,7 @@ button img {
 .qweruiop {
   background: var(--accent2-color);
   color:  var(--dark-color);
-  padding: 2rem;
+  padding: 1.3rem;
   display: none;
   font-size: 1rem;
   line-height: 140%;
@@ -606,12 +606,12 @@ details[open] summary::before {
 
 .galeriaHist-legenda {
   position: absolute;
-  padding: 1.6rem;
+  padding: 1.3rem;
   background: var(--accent4-color);
   color: var(--light-color);
   border-radius: 1rem;
   box-sizing: border-box;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .galeriaHist-botao {
