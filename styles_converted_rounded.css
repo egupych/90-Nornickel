@@ -601,6 +601,7 @@ details[open] summary::before {
   height: auto;
   display: block;
   object-fit: cover;
+  border-radius: 1rem;
 }
 
 .galeriaHist-legenda {
@@ -1144,7 +1145,10 @@ object-fit: cover;
 
 @media (max-width: 768px) {
 
-
+  .galeriaHist-item-slide img {
+  margin-bottom: 30rem;
+  border-radius: 1rem;
+}
 
   .hdyqeuwp {
     flex-direction: column;
