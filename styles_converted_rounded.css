@@ -62,7 +62,7 @@ body {
   animation: fadeIn 0.7s ease-out forwards;
 }
 
-.footer_mobile {
+.mobile {
   display: none;
 }
 
@@ -399,11 +399,11 @@ button img {
 .container_img {
   width: auto;
   display: flex;
+  flex-direction: column;
 }
 
 .container_img img {
   width: 100%;
-  display: block;
   margin: 0 auto;
   margin-top: 1rem;
 }
@@ -1154,8 +1154,12 @@ object-fit: cover;
     display: none;
   }
 
-  .footer_mobile {
+  .mobile {
     display: block;
+  }
+
+  .desktop {
+    display: none;
   }
 
   .xjmrtdka{
