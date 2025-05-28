@@ -474,8 +474,7 @@ button img {
   display: flex;
   justify-content: center;
   gap: 0.3rem;
-  padding-bottom: 1.88rem;
-  padding-top: 1.88rem;
+
   flex-wrap: wrap;
   max-width: 66%;
   margin: 0 auto;
@@ -483,7 +482,7 @@ button img {
 
 .xmqoefha {
   text-align: center;
-  background: #fff;
+  background: var(--light-color);
   border: 0.12rem solid transparent;
   padding: 1.25rem;
   border-radius: 1rem;
@@ -495,6 +494,7 @@ button img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .xmqoefha.active {
@@ -536,7 +536,7 @@ details summary {
   list-style: none;
   position: relative;
   padding-left: 1.5rem;
-  color: #0056d2;
+  color: var(--accent4-color);
 }
 
 /* Стрелка */
@@ -561,7 +561,7 @@ details[open] summary::before {
 
 .ifuyzvng,
 .lxmczpoi {
-  color: #0056d2;
+  color: var(--accent4-color);
 }
 
 
@@ -779,7 +779,7 @@ details[open] summary::before {
 
 .ucmnrtba-arrow {
   position: absolute;
-  top: 47%;
+  top: 44%;
   transform: translateY(-50%);
   background: white;
   border: none;
@@ -805,7 +805,6 @@ details[open] summary::before {
 
 .ucmnrtba-dots {
   text-align: center;
-  margin-top: 0.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -820,6 +819,7 @@ details[open] summary::before {
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease !important; /* Плавный переход эффектов */
+  margin-top: 1rem;
 }
 
 .ucmnrtba-dots span:hover {
