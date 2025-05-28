@@ -80,6 +80,7 @@ a {
 
 html{
   font-size: clamp(0.9rem, 2vw, 1.1rem); /* Устанавливаем размер шрифта */
+  line-height: 140%;
 }
 
 /* Основные стили */
@@ -141,7 +142,7 @@ h1 {
   margin: 0;
   font-family: 'l', sans-serif;
   font-size: 7.50rem;
-  line-height: 120%;
+  line-height: 140%;
   background: linear-gradient(135deg, #ffffff, #ffffff57);
   background-clip: text;
   -webkit-background-clip: text;
@@ -253,18 +254,18 @@ h2 {
 
 .cfumzqae {
   background: var(--accent1-color);
-  color: white;
+  color: var(--light-color);
   border-radius: 1rem;
   padding-top: 1.7rem;
-  padding-left: 1.7rem;
-  padding-right: 1.7rem;
-  padding-bottom: 1.1rem;
+    padding-bottom: 1.1rem;
+      padding-left: 1.7rem;
+        padding-right: 1.7rem;
 }
 
 .gqvnfhuw {
   color: var(--light-color);
   border: 0.12rem solid var(--light-color);
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.9rem;
   border-radius: 1rem;
   font-size: 1rem;
   display: inline-block;
@@ -377,7 +378,7 @@ button img {
   font-family: 'r', sans-serif;
   font-size: 1rem;
   color: var(--dark-color);
-  line-height: 136%;
+  line-height: 140%;
 }
 
 .description {
@@ -450,7 +451,7 @@ button img {
   padding: 2rem;
   display: none;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 140%;
 }
 
 .arrow {
@@ -599,7 +600,7 @@ details[open] summary::before {
 
 .galeriaHist-legenda {
   position: absolute;
-  padding: 2rem;
+  padding: 1.6rem;
   background: var(--accent4-color);
   color: var(--light-color);
   border-radius: 1rem;
@@ -867,6 +868,7 @@ details[open] summary::before {
   padding-right: 2rem;;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  line-height: 120%;
 }
 
 .options-container {
@@ -944,7 +946,7 @@ object-fit: cover;
 .footer {
   color: var(--light-color);
   font-family: 'r', sans-serif;
-  line-height: 120%;
+  line-height: 140%;
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 100%;
@@ -1016,6 +1018,7 @@ object-fit: cover;
 
   html {
     font-size: 1rem;
+    
   }
 
   .galeriaHist-container {
@@ -1237,6 +1240,7 @@ object-fit: cover;
   .question-container p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+
   }
   
   .options-container {
