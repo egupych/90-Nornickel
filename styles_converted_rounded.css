@@ -747,7 +747,7 @@ details[open] summary::before {
 /* слйдер 3 фото  */
 .ucmnrtba-slider {
   position: relative;
-  width: 60%;
+  width: 68%;
   max-width:100%;
   margin: 0 auto;
   padding: 1.25rem 0;
@@ -903,7 +903,7 @@ object-fit: cover;
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  width: 80%;
+  width: 100%;
   box-sizing: border-box;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -1130,9 +1130,9 @@ object-fit: cover;
 }
 
   .quiz-container {
-    width: 86%;
-    padding-left: 0rem;
-    padding-right: 0rem;
+    width: 80%;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
