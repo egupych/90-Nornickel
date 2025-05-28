@@ -115,8 +115,6 @@ header{
   background-repeat: no-repeat;/* не повторяем картинку */
   width: 100%;                 /* ширина блока (можно задать нужную) */
   height: 100vh;               /* например, высота — весь экран */
-  align-items: flex-start;
-
 }
 
 
@@ -124,25 +122,22 @@ header{
 /* Навигация                                        */
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
+.container_start {
+  width: 60%;
+}
+
 nav {
 	font-size: 0.9rem;
   font-family: 'sb', sans-serif;
   color: var(--light-color);
-	height: 6.00rem;
-	z-index: 0;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	user-select: none;
-  position: absolute;
-  flex-wrap: wrap;
-  width: 63%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 
 h1 {
   margin: 0;
-  padding-top: 10rem;
   font-family: 'l', sans-serif;
   font-size: 7.50rem;
   line-height: 120%;
@@ -177,8 +172,6 @@ h2 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 60%;
-  max-width: 86%;
 }
 
 
@@ -186,6 +179,8 @@ h2 {
 .offer {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
 }
 
 .content img {
@@ -203,6 +198,8 @@ h2 {
 	cursor: pointer;
   justify-content: space-between;
   gap: 1.8rem;
+  padding-bottom: 0.2rem;
+  color: var(--accent2-color);
 }
 
 
@@ -230,7 +227,6 @@ h2 {
   gap: 0.5rem;
   position: absolute;
   right: 2rem;
-  top: 2.2rem;
 }
 
 .burger .bar {
@@ -326,17 +322,6 @@ button img {
   width: 100%;
 }
 
-.container_start {
-  padding-bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  width: 60%;
-  max-width: 86%;
-  margin: 0 auto; /* Центрирование */
-  box-sizing: border-box; /* Включение padding в ширину */
-}
 
 .container_mini {
   padding-bottom: 0;
@@ -418,8 +403,6 @@ button img {
 
 .arrow {
   width: 3rem;
-  position: absolute;
-  bottom: 2rem;
   opacity: 0.7;
   cursor: pointer;
 }
@@ -1058,6 +1041,10 @@ object-fit: cover;
 
 @media (max-width: 900px) {
 
+  .container_start {
+    width: 86%;
+  }
+
   .content {
     width: 86%;
   }
@@ -1088,9 +1075,6 @@ object-fit: cover;
     display: flex;
   }
   
-  .offer p {
-    width: 86%;
-  }
   
   
   .gklfpotn {
@@ -1123,6 +1107,8 @@ object-fit: cover;
   }
 
 @media (max-width: 768px) {
+
+
 
   .hdyqeuwp {
     flex-direction: column;
@@ -1177,7 +1163,6 @@ object-fit: cover;
 
   h1 {
     margin: 0;
-    padding-top: 10rem;
     font-family: 'l', sans-serif;
     font-size: 5rem;
     line-height: 120%;
@@ -1196,8 +1181,6 @@ object-fit: cover;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 60%;
-    max-width: 86%;
   }
 
 
