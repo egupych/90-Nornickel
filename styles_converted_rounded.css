@@ -1045,6 +1045,10 @@ object-fit: cover;
     width: 86%;
   }
 
+  .arrow {
+    opacity: 1;
+  }
+
   .content {
     width: 86%;
   }
