@@ -974,6 +974,7 @@ object-fit: cover;
   margin-top: 0.5rem
 }
 
+
 /* Разделительная линия */
 .footer__line {
   border-top: 0.06rem solid var(--light-color);
