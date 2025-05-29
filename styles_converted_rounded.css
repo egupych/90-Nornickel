@@ -447,7 +447,6 @@ button img {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  border-bottom: 0.12rem solid var(--accent2-color);
 }
 
 .iwpqxzas:hover {
@@ -1000,6 +999,12 @@ object-fit: cover;
   margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.line0 {
+  border-top: 0.12rem solid var(--accent2-color);
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /* Нижняя часть */
