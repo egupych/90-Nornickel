@@ -462,6 +462,10 @@ button img {
   line-height: 140%;
 }
 
+.qweruiop p {
+  padding-bottom: 1rem;
+}
+
 .arrow {
   font-size: 1.25rem;
   transition: transform 0.3s;
