@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'b';
-  src: url('ProximaNova-Bold.woff') format('woff2');
+  src: url('ProximaNova-Bold.woff') format('woff');
 }
 
 @font-face {
@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: 'r';
-  src: url('ProximaNova-Regular.woff2') format('woff2');
+  src: url('Proxima-Nova-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -267,7 +267,7 @@ h2 {
 .gqvnfhuw {
   color: var(--light-color);
   border: 0.12rem solid var(--light-color);
-
+  font-family: 'r';
   padding-top: 0.5rem;
   padding-bottom: 0.42rem;
   padding-left: 0.9rem;
@@ -280,8 +280,8 @@ h2 {
 }
 
 .xocmtrbd {
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 5rem;
+  font-family: "b";
   line-height: 1;
   display: flex;
   align-items: center;
