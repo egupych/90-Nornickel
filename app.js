@@ -151,10 +151,12 @@ const buttons = [
   { btn: "btn3", cnt: "cnt3" }
 ];
 
+// при клике по заголовку
 buttons.forEach(({ btn, cnt }, index) => {
   document.getElementById(btn).addEventListener("click", () => {
     buttons.forEach(({ cnt: c }, i) => {
       const content = document.getElementById(c);
+      // если кликнутый — тот же, что уже открыт
       if (i === index) {
         const isVisible = content.style.display === "block";
         content.style.display = isVisible ? "none" : "block";
@@ -164,6 +166,14 @@ buttons.forEach(({ btn, cnt }, index) => {
     });
   });
 });
+
+// при загрузке — гарантированно откроем первый, закроем остальные
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("cnt1").style.display = "block";
+  document.getElementById("cnt2").style.display = "none";
+  document.getElementById("cnt3").style.display = "none";
+});
+
 
 
 
