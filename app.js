@@ -370,3 +370,77 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCount();
   });
 });
+
+
+
+
+// увеличивает фото по клику с классом open
+
+// Добавляем CSS-анимации
+const style = document.createElement('style');
+style.textContent = `
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  #overlay.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #overlay img {
+    max-height: 90vh;
+    max-width: 90vw;
+    object-fit: contain;
+    border-radius: 1rem;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+  }
+
+  #overlay.show img {
+    transform: scale(1);
+    opacity: 1;
+  }
+`;
+document.head.appendChild(style);
+
+// Создание оверлея
+const overlay = document.createElement('div');
+overlay.id = 'overlay';
+const overlayImage = document.createElement('img');
+overlay.appendChild(overlayImage);
+document.body.appendChild(overlay);
+
+// Открытие картинки
+document.querySelectorAll('img.open').forEach(img => {
+  img.addEventListener('click', () => {
+    overlayImage.src = img.src;
+    overlay.classList.add('active');
+
+    // Делаем плавную анимацию после небольшого таймаута (для активации перехода)
+    setTimeout(() => {
+      overlay.classList.add('show');
+    }, 10);
+  });
+});
+
+// Закрытие
+overlay.addEventListener('click', () => {
+  overlay.classList.remove('show'); // убираем анимацию
+  setTimeout(() => {
+    overlay.classList.remove('active'); // затем убираем сам оверлей
+  }, 300); // подождём завершения анимации
+});
