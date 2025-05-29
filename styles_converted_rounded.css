@@ -842,10 +842,7 @@ details[open] summary::before {
 
 .quiz-container {
   margin: 0 auto;
-  padding-top: 1.4rem;
-  padding-bottom: 0.15rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding: 2.5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -878,7 +875,7 @@ details[open] summary::before {
 }
 
 .question-container p {
-  font-size: 2.12rem;
+  font-size: 2rem;
   font-family: 'sb', sans-serif;
   color: var(--light-color);
   text-align: center;
@@ -939,8 +936,6 @@ object-fit: cover;
 
 
 .feedback-container{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   font-size: 1rem;
   color: var(--light-color);
   font-family: "li", sans-serif;
@@ -948,7 +943,9 @@ object-fit: cover;
   text-align: center;
   width: 86%;
   max-width: 100%;
+  margin-top: 2.2rem;
 }
+
 
 .correct, .correct2, .correct3 {
   background: var(--accent1-color);
@@ -1243,10 +1240,6 @@ object-fit: cover;
 
   .quiz-container {
     width: 74%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 
   h1 {
