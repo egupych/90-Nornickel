@@ -709,7 +709,6 @@ details[open] summary::before {
   font-weight: bold;
   color: var(--accent4-color);
   font-size: 1rem;
-
 }
 
 .ziwunbke.active {
@@ -1177,6 +1176,11 @@ object-fit: cover;
 
 @media (max-width: 768px) {
 
+  .ziwunbke {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
   .galeriaHist-item-slide img {
   margin-bottom: 40rem;
   border-radius: 1rem;
@@ -1230,7 +1234,7 @@ object-fit: cover;
 }
 
   .quiz-container {
-    width: 76%;
+    width: 74%;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 2rem;
