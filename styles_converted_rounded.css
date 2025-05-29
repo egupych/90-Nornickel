@@ -462,8 +462,8 @@ button img {
   line-height: 140%;
 }
 
-.qweruiop p {
-  padding-bottom: 1rem;
+.qweruiop p:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
 
 .arrow {
@@ -864,6 +864,14 @@ details[open] summary::before {
   top: 0;
 }
 
+.metal {
+  font-size: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--accent2-color);
+}
+
+
 .number img {
   height: 7rem;
 
@@ -984,6 +992,14 @@ object-fit: cover;
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.line {
+  border-top: 0.06rem solid var(--darkgray-color);
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Нижняя часть */

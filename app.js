@@ -146,28 +146,25 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 // аккрдеон
 const buttons = [
-  { btn: "btn1", cnt: "cnt1", arr: "arr1" },
-  { btn: "btn2", cnt: "cnt2", arr: "arr2" },
-  { btn: "btn3", cnt: "cnt3", arr: "arr3" }
+  { btn: "btn1", cnt: "cnt1" },
+  { btn: "btn2", cnt: "cnt2" },
+  { btn: "btn3", cnt: "cnt3" }
 ];
 
-buttons.forEach(({ btn, cnt, arr }, index) => {
+buttons.forEach(({ btn, cnt }, index) => {
   document.getElementById(btn).addEventListener("click", () => {
-    buttons.forEach(({ btn: b, cnt: c, arr: a }, i) => {
+    buttons.forEach(({ cnt: c }, i) => {
       const content = document.getElementById(c);
-      const arrow = document.getElementById(a);
-
       if (i === index) {
         const isVisible = content.style.display === "block";
         content.style.display = isVisible ? "none" : "block";
-        arrow.innerText = isVisible ? "" : "";
       } else {
         content.style.display = "none";
-        document.getElementById(a).innerText = "";
       }
     });
   });
 });
+
 
 
 
