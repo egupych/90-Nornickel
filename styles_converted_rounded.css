@@ -142,7 +142,7 @@ h1 {
   margin: 0;
   font-family: 'l', sans-serif;
   font-size: 7.50rem;
-  line-height: 140%;
+  line-height: 120%;
   background: linear-gradient(135deg, #ffffff, #ffffff57);
   background-clip: text;
   -webkit-background-clip: text;
@@ -173,6 +173,7 @@ h2 {
   line-height: 120%;
   background: linear-gradient(135deg, #ffffff, #ffffff57);
   background-clip: text;
+  margin-left: 0.3rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1255,6 +1256,7 @@ object-fit: cover;
     line-height: 120%;
     background: linear-gradient(135deg, #ffffff, #ffffff);
     background-clip: text;
+    margin-left: 0.1rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
