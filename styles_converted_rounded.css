@@ -117,11 +117,11 @@ body {
       }
 
       .qwezplmn {
-        flex: 0 0 26rem; 
+        flex: 0 0 50rem; 
         scroll-snap-align: center;
         border-radius: 1rem;
         overflow: hidden;
-        background: #f0f0f0;
+        background: var(--light-color);
         transition: opacity 0.3s ease, transform 0.3s ease;
         /* cursor: grab; */
         opacity: 0.3;
@@ -129,6 +129,7 @@ body {
         display: flex;
         flex-direction: column;
         height: auto; /* задайте нужную высоту */
+
       }
 
       .qwezplmn.xhbcfjru {
@@ -137,15 +138,14 @@ body {
       }
 
       .qwezplmn img {
-        width: 100%;
-        height: 100%;
+        height: 50vh;
         object-fit: cover;
         flex-grow: 1;
       }
 
       .qwezplmn p {
         padding: 1rem;
-        background: #d3e6f7;
+        background: var(--accent2-color);
         font-size: 0.9rem;
         line-height: 140%;
         font-family: "r";
@@ -1336,9 +1336,9 @@ object-fit: cover;
  height: 20vh;
 }
 
-.qwezplmn {
- width: 80%;
-}
+  .qwezplmn {
+  flex: 0 0 20rem; 
+  }
 
   .galeriaHist-item-slide img {
   margin-bottom: 40rem;
