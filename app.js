@@ -236,87 +236,6 @@ function switchTab(tabId) {
 
 
 
-// слайдер 3 фото 
-
-document.addEventListener("DOMContentLoaded", function () {
-  const track = document.querySelector(".ucmnrtba-track");
-  const slides = document.querySelectorAll(".ucmnrtba-slide");
-  const prev = document.querySelector(".ucmnrtba-prev");
-  const next = document.querySelector(".ucmnrtba-next");
-  const dotsContainer = document.querySelector(".ucmnrtba-dots");
-
-  let slidesToShow = getSlidesToShow();
-  let currentPage = 0;
-
-  function getSlidesToShow() {
-    return window.innerWidth <= 799 ? 2 : 3;
-  }
-
-  function getTotalPages() {
-    return Math.ceil(slides.length / slidesToShow);
-  }
-
-  function updateSlider() {
-    slidesToShow = getSlidesToShow();
-    const slideWidth = slides[0].offsetWidth;
-    const offset = slideWidth * slidesToShow * currentPage;
-    track.style.transform = `translateX(-${offset}px)`;
-    updateDots();
-  }
-
-  function updateDots() {
-    const dots = document.querySelectorAll(".ucmnrtba-dots span");
-    const totalPages = getTotalPages();
-
-    // recreate dots if slidesToShow changed
-    if (dots.length !== totalPages) {
-      dotsContainer.innerHTML = "";
-      createDots();
-    }
-
-    document.querySelectorAll(".ucmnrtba-dots span").forEach((dot, i) => {
-      dot.classList.toggle("active", i === currentPage);
-    });
-  }
-
-  function createDots() {
-    const totalPages = getTotalPages();
-    for (let i = 0; i < totalPages; i++) {
-      const dot = document.createElement("span");
-      dot.classList.toggle("active", i === currentPage);
-      dot.addEventListener("click", () => {
-        currentPage = i;
-        updateSlider();
-      });
-      dotsContainer.appendChild(dot);
-    }
-  }
-
-  prev.addEventListener("click", () => {
-    if (currentPage > 0) {
-      currentPage--;
-      updateSlider();
-    }
-  });
-
-  next.addEventListener("click", () => {
-    if (currentPage < getTotalPages() - 1) {
-      currentPage++;
-      updateSlider();
-    }
-  });
-
-  window.addEventListener("resize", () => {
-    updateSlider();
-  });
-
-  createDots();
-  updateSlider();
-});
-
-
-
-
 // слайдер 2
 const cards3 = document.querySelectorAll('.xmqoefha');
 const sections = document.querySelectorAll('.kjdhxowq');
@@ -463,3 +382,35 @@ overlay.addEventListener('click', () => {
     overlay.classList.remove('active'); // затем убираем сам оверлей
   }, 300); // подождём завершения анимации
 });
+
+
+
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+// Большой автослайдер с фото
+//::::::::::::::::::::::::::::::::::::::::::::::::::
+  
+
+  document.addEventListener('DOMContentLoaded', () => {
+  
+	//===== MICRO-SLIDER begin
+	const __ms = document.querySelector('.micro-slider');
+	const __msSlider = new MicroSlider(__ms, { indicators: true, indicatorText: '' });
+	const hammer = new hammer(__ms);
+	  const __msTimer = 3000;
+	let __msAutoplay = setInterval(() => __msSlider.next(), __msTimer);
+	  
+	
+	//detect gesture tap event with hammer js library
+	hammer.on('tap', function(e) {
+	  clearInterval(__msAutoplay);
+	  console.log(e.type + ' gesture detected');
+	});
+	
+	//detect gesture swipe event with hammer js library
+	hammer.on('swipe', function(e) {
+	  clearInterval(__msAutoplay); 
+	  __msAutoplay = setInterval(() => __msSlider.next(), __msTimer);
+	  console.log(e.type + ' gesture detected');
+	});
+	
+  });

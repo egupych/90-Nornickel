@@ -218,6 +218,37 @@ header{
   width: 60%;
 }
 
+.micro-slider {
+  height: 570px;
+  position: relative;
+  width: 100%;
+}
+
+.themes
+{
+  background-color: #E6E6E6;
+}
+
+.slider-item {
+  background: #E6E6E6;
+  color: #FFF;
+  display: none;
+  height: 480px;
+  line-height: 140%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 784px;
+  cursor: grab;
+  border-radius: 32px;
+}
+
+
+.s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10, .s11, .s12
+{background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)); background-attachment: fixed; background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+
+
 nav {
   display: flex;
   align-items: center;
@@ -870,95 +901,6 @@ details[open] summary::before {
 }
 
 
-/* слйдер 3 фото  */
-.ucmnrtba-slider {
-  position: relative;
-  width: 60%;
-  max-width:100%;
-  margin: 0 auto;
-  padding: 1.25rem 0;
-}
-
-.ucmnrtba-track-wrapper {
-  overflow: hidden;
-  border-radius: 1rem;
-}
-
-.ucmnrtba-track {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.ucmnrtba-slide {
-  flex: 0 0 calc(100% / 3); /* или 2 на мобильных */
-  box-sizing: border-box;
-  padding: 0 0.38rem;
-}
-
-.ucmnrtba-slide img {
-  width: 100%;
-  border-radius: 1rem;
-  display: block;
-}
-
-.ucmnrtba-arrow {
-  position: absolute;
-  top: 44%;
-  transform: translateY(-50%);
-  background: white;
-  border: none;
-  border-radius: 50%;
-  width: 2.25rem;
-  height: 2.25rem;
-  font-size: 1.25rem;
-  cursor: pointer;
-  z-index: 10;
-  color: var(--accent1-color);
-  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
-
-}
-
-.ucmnrtba-prev {
-  left: -1.13rem;
-}
-
-.ucmnrtba-next {
-  right: -1.13rem;
-}
-
-
-
-.ucmnrtba-dots {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.ucmnrtba-dots span {
-  display: inline-block;
-  width: 1.00rem; /* Размер кружков */
-  height: 1.00rem;
-  background-color: var(--darkgray-color); /* Серый цвет */
-  margin: 0 0.25rem;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s ease !important; /* Плавный переход эффектов */
-  margin-top: 1rem;
-}
-
-.ucmnrtba-dots span:hover {
-  background-color: var(--dark-color) !important; /* Белый цвет при наведении */
-  transform: scale(1.2); /* Увеличение */
-}
-
-.ucmnrtba-dots span.active {
-  background-color: var(--accent1-color); /* Белый цвет активной точки */
-  transform: scale(1.2); /* Увеличение активного элемента */
-
-
-}
-
 
 
 
@@ -1187,6 +1129,31 @@ object-fit: cover;
 
 @media (max-width: 1400px) {
 
+  .micro-slider {
+    height: 43vw;
+    position: relative;
+    width: 100%;
+  }
+
+    .slider-item {
+    background: #E6E6E6;
+    color: #FFF;
+    display: none;
+    height: 30vw;
+    line-height: 140%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 49vw;
+    cursor: grab;
+    border-radius: 2vw;
+  }
+  
+  
+  .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10, .s11, .s12
+  {background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)); background-attachment: fixed; background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;} 
+
+
   .xjmrtdka {
     max-width: 70%;
   }
@@ -1221,11 +1188,7 @@ object-fit: cover;
   .container {
     width: 100%;
   }
-  
-  .ucmnrtba-slide {
-    flex: 0 0 calc(100% / 2);
-  }
-  
+ 
   
   .gklfpotn {
     width: 70%;
@@ -1239,10 +1202,7 @@ object-fit: cover;
     width: 70%;
   }
   
-  .ucmnrtba-slider
-   {
-      width: 70%;
-  }
+
   
 }
 
@@ -1288,9 +1248,6 @@ object-fit: cover;
     width: 100%;
   }
   
-  .ucmnrtba-slide {
-    flex: 0 0 calc(100% / 1);
-  }
 
   header{
     height: 80vh; 
@@ -1318,10 +1275,7 @@ object-fit: cover;
     width: 86%;
   }
   
-  .ucmnrtba-slider
-   {
-      width: 86%;
-  }
+
   
   .grid-text img {
     display: none;
@@ -1329,6 +1283,18 @@ object-fit: cover;
 }
 
 @media (max-width: 768px) {
+
+  .micro-slider {
+  height: 85vw;
+  user-select: none;
+}
+
+.slider-item {
+  height: 60vw;
+  line-height: 140%;
+  width: 60vw;
+  display: none;
+}
 
   .bxmzvnty {
     gap:0.3rem;
