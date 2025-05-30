@@ -352,7 +352,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const __ms = document.querySelector('.micro-slider');
   const __msSlider = new MicroSlider(__ms, {
     indicators: true,
-    indicatorText: ''
+    indicatorText: '',
+    slide_easing: 'ease-in-out' // <--- Добавьте эту строку
   });
   const __msTimer = 3000;
   let __msAutoplay = setInterval(() => __msSlider.next(), __msTimer);
