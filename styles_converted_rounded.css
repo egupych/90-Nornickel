@@ -369,7 +369,7 @@ h2 {
 }
 
 .xocmtrbd {
-  font-size: 4.3rem;
+  font-size: 5rem;
   font-family: "b";
   line-height: 1;
   display: flex;
@@ -1472,6 +1472,9 @@ object-fit: cover;
   .seta-direita {
     right: 0.5rem;
   }
+
+  .xocmtrbd {
+  font-size: 4rem;
   
 }
 
