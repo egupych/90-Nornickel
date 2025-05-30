@@ -349,7 +349,7 @@ cards3.forEach(card => {
 document.addEventListener("DOMContentLoaded", function () {
   const counters = document.querySelectorAll(".animnum");
 
-  counters.forEach(counter => {
+  const animateCounter = (counter) => {
     const target = +counter.getAttribute("data-target");
     const duration = 1500;
     const stepTime = 15;
@@ -368,6 +368,25 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     updateCount();
+  };
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          animateCounter(counter);
+          observer.unobserve(counter); // отключаем наблюдение, чтобы не повторялось
+        }
+      });
+    },
+    {
+      threshold: 0.6 // срабатывает, когда 60% элемента видно
+    }
+  );
+
+  counters.forEach(counter => {
+    observer.observe(counter);
   });
 });
 
