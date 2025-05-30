@@ -94,7 +94,9 @@ body {
 }
 
 
-
+.margin{
+  padding-bottom: 2rem;
+}
 
 @keyframes slideInFromTop {
   0% {
@@ -512,7 +514,6 @@ button img {
 .container_img img {
   width: 100%;
   margin: 0 auto;
-  margin-top: 2.5rem;
 }
 
 .pack {
@@ -1185,6 +1186,10 @@ object-fit: cover;
 
 
 @media (max-width: 1400px) {
+
+  .xjmrtdka {
+    max-width: 70%;
+  }
 
   html {
     font-size: 1rem;
