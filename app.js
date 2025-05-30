@@ -317,7 +317,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// ебаный слайдер 2
+// слайдер 2
 const cards3 = document.querySelectorAll('.xmqoefha');
 const sections = document.querySelectorAll('.kjdhxowq');
 
