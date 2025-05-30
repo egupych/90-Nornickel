@@ -107,6 +107,94 @@ body {
   }
 }
 
+      .ajkqwepo {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  gap: 1rem;
+
+  scroll-behavior: smooth;
+      }
+
+      .qwezplmn {
+        flex: 0 0 30rem; 
+        scroll-snap-align: center;
+        border-radius: 1rem;
+        overflow: hidden;
+        background: #f0f0f0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        /* cursor: grab; */
+        opacity: 0.3;
+
+        display: flex;
+        flex-direction: column;
+        height: auto; /* задайте нужную высоту */
+      }
+
+      .qwezplmn.xhbcfjru {
+        opacity: 1;
+        cursor: default;
+      }
+
+      .qwezplmn img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        flex-grow: 1;
+      }
+
+      .qwezplmn p {
+        padding: 1rem;
+        background: #d3e6f7;
+        font-size: 0.9rem;
+        line-height: 140%;
+        font-family: "r";
+        margin: 0;
+        flex-shrink: 0;
+      }
+
+     .ajkqwepo, .ajkqwepo * {
+        user-select: none;
+        -webkit-user-drag: none;
+      }
+
+      .qwezplmn p, .qwezplmn img {
+        pointer-events: none;
+      }
+
+      .ajkqwepo {
+        cursor: grab;
+      }
+
+      .ajkqwepo.dragging {
+        cursor: grabbing;
+      }
+
+      .bxmzvnty {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.25rem;
+        font-size: 0.9rem;
+        color:#004C97;
+        font-family: "b";
+      }
+
+
+      .bxmzvnty span {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-bottom: 0.125rem solid transparent;
+  opacity: 0.3; /* Добавлено: делает неактивные элементы полупрозрачными */
+  transition: all 0.3s ease;
+  will-change: opacity, border-bottom-color;
+}
+
+.bxmzvnty .xhbcfjru {
+  font-weight: bold;
+  border-bottom-color: #00438b;
+  opacity: 1; /* Добавлено: активный элемент непрозрачный */
+}
 
 header{
   display: flex;
@@ -500,7 +588,7 @@ button img {
 .wmeofkzs {
   display: flex;
   justify-content: center;
-  gap: 0.3rem;
+  gap: 1rem;
 
   flex-wrap: wrap;
   max-width: 66%;
@@ -714,26 +802,37 @@ details[open] summary::before {
 .hdyqeuwp {
   display: flex;
   border-bottom: 0.12rem solid var(--accent2-color);
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap; /* не даём переноситься вкладкам */
+  /* убираем justify-content */
+  /* justify-content: space-between; */
 }
 
 .ziwunbke {
+  flex: 1; /* равномерно растягиваем вкладки */
   display: flex;
-  text-align: center;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-  padding-left: 1.8rem;
-  padding-right: 1.8rem;
+  justify-content: center; /* чтобы текст был по центру */
+  align-items: center;
   cursor: pointer;
   font-weight: bold;
   color: var(--accent4-color);
   font-size: 1rem;
+  text-align: center;
+
+  /* уменьшить боковые padding, чтобы убрать промежутки */
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 0.5rem; /* уменьшил */
+  padding-right: 0.5rem; /* уменьшил */
 }
+
 
 .ziwunbke.active {
   background-color: var(--accent4-color);
   color: var(--accent2-color);
+}
+
+.ziwunbke {
+  line-height: 100%;
 }
 
 .azkqwrny {
@@ -1147,6 +1246,7 @@ object-fit: cover;
     width: 80%;
   }
 
+  
 
   .xjmrtdka {
   max-width: 86%;
@@ -1220,9 +1320,24 @@ object-fit: cover;
 
 @media (max-width: 768px) {
 
+  .bxmzvnty {
+    gap:0.3rem;
+    line-height: 110%;
+  }
+
   .ziwunbke {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.qwezplmn img {
+ height: 20vh;
+}
+
+.qwezplmn {
+ width: 80%;
 }
 
   .galeriaHist-item-slide img {
@@ -1275,6 +1390,7 @@ object-fit: cover;
   flex-wrap: wrap;
   max-width: 66%;
   margin: 0 auto;
+  gap: 0.3rem;
 }
 
 
