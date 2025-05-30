@@ -1029,6 +1029,19 @@ object-fit: cover;
   margin: 0 auto;
 }
 
+
+ /* CSS для скрытия горизонтального скролла */
+
+#slider {
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+#slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 /* Нижняя часть */
 .footer__bottom {
   display: flex;
@@ -1045,6 +1058,9 @@ object-fit: cover;
 
 }
 
+.galeriaHist-container, .galeriaHist-cronograma{
+  display: none;
+}
 
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/

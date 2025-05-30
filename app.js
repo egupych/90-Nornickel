@@ -343,33 +343,33 @@ cards3.forEach(card => {
 
 
 
-// // анимация чисел роста
+// анимация чисел роста
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const counters = document.querySelectorAll(".animnum");
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll(".animnum");
 
-//   counters.forEach(counter => {
-//     const target = +counter.getAttribute("data-target");
-//     const duration = 1500;
-//     const stepTime = 15;
-//     const steps = duration / stepTime;
-//     let current = 0;
-//     const increment = target / steps;
+  counters.forEach(counter => {
+    const target = +counter.getAttribute("data-target");
+    const duration = 1500;
+    const stepTime = 15;
+    const steps = duration / stepTime;
+    let current = 0;
+    const increment = target / steps;
 
-//     const updateCount = () => {
-//       current += increment;
-//       if (current >= target) {
-//         counter.textContent = target;
-//       } else {
-//         counter.textContent = Math.floor(current);
-//         requestAnimationFrame(updateCount);
-//       }
-//     };
+    const updateCount = () => {
+      current += increment;
+      if (current >= target) {
+        counter.textContent = target;
+      } else {
+        counter.textContent = Math.floor(current);
+        requestAnimationFrame(updateCount);
+      }
+    };
 
-//     updateCount();
-//   });
-// });
+    updateCount();
+  });
+});
 
 
 
