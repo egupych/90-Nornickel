@@ -173,50 +173,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-// слайдер дат
-
-
-const galeriaHistContainer = document.querySelector('.galeriaHist-container');
-const listaSlides = document.querySelector('.galeriaHist-lista-slides');
-const botoesCronograma = document.querySelectorAll('.galeriaHist-cronograma-item');
-const botaoEsquerdo = document.querySelector('.seta-esquerda');
-const botaoDireito = document.querySelector('.seta-direita');
-
-let indiceAtual = 0;
-const totalSlides = listaSlides.children.length;
-
-function mostrarSlide(novoIndice) {
-  if (novoIndice < 0) novoIndice = totalSlides - 1;
-  if (novoIndice >= totalSlides) novoIndice = 0;
-  indiceAtual = novoIndice;
-  
-  const deslocamento = -indiceAtual * 100;
-  listaSlides.style.transform = `translateX(${deslocamento}%)`;
-  
-  botoesCronograma.forEach(btn => btn.classList.remove('active'));
-  botoesCronograma[indiceAtual].classList.add('active');
-}
-
-// стрелки
-botaoEsquerdo.addEventListener('click', () => {
-  mostrarSlide(indiceAtual - 1);
-});
-botaoDireito.addEventListener('click', () => {
-  mostrarSlide(indiceAtual + 1);
-});
-
-// клик по дате
-botoesCronograma.forEach(botao => {
-  botao.addEventListener('click', () => {
-    const idx = parseInt(botao.dataset.indice, 10);
-    mostrarSlide(idx);
-  });
-});
-
-// инициализация
-mostrarSlide(0);
-
   
 
 
@@ -390,27 +346,34 @@ overlay.addEventListener('click', () => {
 //::::::::::::::::::::::::::::::::::::::::::::::::::
   
 
-  document.addEventListener('DOMContentLoaded', () => {
-  
-	//===== MICRO-SLIDER begin
-	const __ms = document.querySelector('.micro-slider');
-	const __msSlider = new MicroSlider(__ms, { indicators: true, indicatorText: '' });
-	const hammer = new hammer(__ms);
-	  const __msTimer = 3000;
-	let __msAutoplay = setInterval(() => __msSlider.next(), __msTimer);
-	  
-	
-	//detect gesture tap event with hammer js library
-	hammer.on('tap', function(e) {
-	  clearInterval(__msAutoplay);
-	  console.log(e.type + ' gesture detected');
-	});
-	
-	//detect gesture swipe event with hammer js library
-	hammer.on('swipe', function(e) {
-	  clearInterval(__msAutoplay); 
-	  __msAutoplay = setInterval(() => __msSlider.next(), __msTimer);
-	  console.log(e.type + ' gesture detected');
-	});
-	
+document.addEventListener('DOMContentLoaded', () => {
+
+  //===== MICRO-SLIDER begin
+  const __ms = document.querySelector('.micro-slider');
+  const __msSlider = new MicroSlider(__ms, {
+    indicators: true,
+    indicatorText: ''
   });
+  const __msTimer = 3000;
+  let __msAutoplay = setInterval(() => __msSlider.next(), __msTimer);
+
+  // Initialize Hammer.js AFTER the element is selected
+  // The 'new' keyword for Hammer needs to be capitalized
+  const hammer = new Hammer(__ms);
+
+
+  // Detect gesture tap event with Hammer.js library
+  hammer.on('tap', function(e) {
+    clearInterval(__msAutoplay);
+    console.log(e.type + ' gesture detected. Autoplay stopped.');
+  });
+
+  // Detect gesture swipe event with Hammer.js library
+  hammer.on('swipe', function(e) {
+    clearInterval(__msAutoplay);
+    // Restart autoplay after a swipe
+    __msAutoplay = setInterval(() => __msSlider.next(), __msTimer);
+    console.log(e.type + ' gesture detected. Autoplay restarted.');
+  });
+
+});

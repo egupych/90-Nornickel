@@ -52,7 +52,6 @@
 }
 
 * {
-  transition: all 0.3s ease-in-out;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -131,6 +130,7 @@ body {
         display: flex;
         flex-direction: column;
         height: auto; /* задайте нужную высоту */
+        
 
       }
 
@@ -715,112 +715,6 @@ details[open] summary::before {
 
 
 
-/* слайдер дат */
-
-.galeriaHist-container {
-  position: relative;
-  width: 60%;
-  margin: 2.5rem auto 0;
-  overflow: hidden;
-  border-radius: 1rem;
-}
-
-.galeriaHist-slides-container {
-  overflow: hidden;
-}
-
-.galeriaHist-lista-slides {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.galeriaHist-item-slide {
-  min-width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.galeriaHist-item-slide img {
-  width: 100%;
-  display: block;
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 1rem;
-}
-
-.galeriaHist-legenda {
-  position: absolute;
-  padding: 1.3rem;
-  background: var(--accent4-color);
-  color: var(--light-color);
-  border-radius: 1rem;
-  box-sizing: border-box;
-  font-size: 0.8rem;
-}
-
-.galeriaHist-botao {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--dark-color);
-  color: var(--light-color);
-  border: none;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 1rem;
-  opacity: 0;
-  transition: opacity 0.2s;
-  z-index: 10;
-}
-.galeriaHist-botao:hover {
-  opacity: 1;
-}
-.seta-esquerda {
-  left: 1rem;
-}
-.seta-direita {
-  right: 1rem;
-}
-
-.galeriaHist-cronograma {
-  display: flex;
-  justify-content: center;
-  width: 55rem;
-  max-width: 86%;
-  margin: 1.25rem auto;
-  flex-wrap: wrap;
-  gap: 1.7rem 2rem;
-}
-.galeriaHist-cronograma-item {
-  background: none;
-  border: none;
-  font-size: 1rem;
-  color: var(--darkgray-color);
-  cursor: pointer;
-  position: relative;
-}
-.galeriaHist-cronograma-item::after {
-  content: '';
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background: var(--darkgray-color);
-  margin: 0.4rem auto 0;
-}
-.galeriaHist-cronograma-item.active {
-  color: var(--accent1-color);
-}
-.galeriaHist-cronograma-item.active::after {
-  background: var(--accent1-color);
-}
-
 
 .gklfpotn {
   width: 60%;
@@ -1101,9 +995,6 @@ object-fit: cover;
 
 }
 
-.galeriaHist-container, .galeriaHist-cronograma{
-  display: none;
-}
 
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -1163,9 +1054,7 @@ object-fit: cover;
     
   }
 
-  .galeriaHist-container {
-    width: 70%;
-  }
+ 
   .container_start {
     width: 70%;
   }
@@ -1222,9 +1111,7 @@ object-fit: cover;
   max-width: 86%;
 }
 
-  .galeriaHist-container {
-    width: 86%;
-  }
+
 
   .container_start {
     width: 86%;
@@ -1316,10 +1203,7 @@ object-fit: cover;
   flex: 0 0 21rem; 
   }
 
-  .galeriaHist-item-slide img {
-  margin-bottom: 40rem;
-  border-radius: 1rem;
-}
+
 
   .hdyqeuwp {
     flex-direction: column;
@@ -1454,4 +1338,3 @@ object-fit: cover;
   }
   
 }
-
