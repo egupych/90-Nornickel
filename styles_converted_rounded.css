@@ -1243,6 +1243,10 @@ object-fit: cover;
 
 @media (max-width: 1000px) {
 
+  .qwezplmn {
+  flex: 0 0 30rem; 
+  }
+
   .quiz-container{
     width: 80%;
   }
