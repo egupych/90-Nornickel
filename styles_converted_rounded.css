@@ -175,12 +175,15 @@ body {
       .bxmzvnty {
         display: flex;
         justify-content: center;
-        gap: 1rem;
+        gap: 2rem;
         margin-top: 1.25rem;
         font-size: 0.9rem;
         color:#004C97;
         font-family: "b";
       }
+
+
+      
 
 
       .bxmzvnty span {
@@ -1236,8 +1239,16 @@ object-fit: cover;
 }
 
   .bxmzvnty {
-    gap:0.3rem;
+    gap:0rem;
     line-height: 110%;
+    margin: 0 auto;
+    line-height: 110%;
+    max-width: 86%;
+    padding-top: 1rem;
+  }
+
+  .dash{
+    display: none;
   }
 
   .ziwunbke {
