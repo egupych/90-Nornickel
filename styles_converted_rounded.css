@@ -207,6 +207,7 @@ header{
   background-repeat: no-repeat;/* не повторяем картинку */
   width: 100%;                 /* ширина блока (можно задать нужную) */
   height: 100vh;               /* например, высота — весь экран */
+  position: relative;
 }
 
 
