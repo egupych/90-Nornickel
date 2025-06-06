@@ -118,7 +118,7 @@ body {
       }
 
       .qwezplmn {
-        flex: 0 0 50rem; 
+        flex: 0 0 64.8em; 
         scroll-snap-align: center;
         border-radius: 1rem;
         overflow: hidden;
