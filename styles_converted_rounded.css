@@ -258,6 +258,36 @@ header{
   opacity: 0.5; /* делаем видео полупрозрачным */
 }
 
+.open2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.open3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+
+  animation: blink 3s infinite ease-in-out;
+}
+
+/* 2 сек — непрозрачно, затем быстрое мигание и обратно */
+@keyframes blink {
+  0%, 66%   { opacity: 1; }   /* первые 2 секунды из 3 — видно (66% от 3s) */
+  75%       { opacity: 0.3; } /* быстрое мигание */
+  100%      { opacity: 1; }   /* снова видно */
+}
+
+
 /* чтобы контент был поверх видео */
 header > .container_start {
   position: relative;
